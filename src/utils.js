@@ -1,13 +1,18 @@
-import fs from 'fs';
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+exports.writeFile = writeFile;
 
-export function getInput(prompt, props) {
-  return new Promise(resolve => prompt.get(props, (err, result) => resolve(result, err)));
-}
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
-export function writeFile(file, content) {
-  return new Promise((resolve, reject) => {
+const _fs = require('fs');
+
+const _fs2 = _interopRequireDefault(_fs);
+
+function writeFile(file, content) {
+  return new Promise(function (resolve, reject) {
     var data = JSON.stringify(content, null, 2);
-    fs.writeFile(file, data, (err) => {
+    _fs2['default'].writeFile(file, data, function (err) {
       if (err) {
         reject(err);
       } else {
