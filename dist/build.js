@@ -67,6 +67,7 @@ function prepareFilesHashQueue(files, chcpContext) {
 
 function prepareConfig(context) {
   var config = {};
+
   try {
     config = fs.readFileSync(context.defaultConfig, 'utf8');
     config = JSON.parse(config);
@@ -86,7 +87,7 @@ function prepareConfig(context) {
   return config;
 }
 
-function hashFile(filename, chcpContext, callback) {
+function hashFile(filename, callback, chcpContext) {
   var hash = crypto.createHash('md5'),
       stream = fs.createReadStream(filename);
 
