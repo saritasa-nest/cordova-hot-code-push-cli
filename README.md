@@ -1,7 +1,7 @@
 # THIS PROJECT IS A FORK OF [nordnet/cordova-hot-code-push-cli](https://github.com/nordnet/cordova-hot-code-push-cli)
 
-The initial project got outdated dependencies since it has been deprecated for a long time. We had to fork it to update deps.
-Besides we removed almost all functionality except building chcp config file because we don't need it.
+The initial project uses outdated dependencies since it has been deprecated for a long time. We had to fork it to update deps.
+In addition, we've removed almost all functionality except building chcp config file because we don't need it.
 
 ## Documentation
 
