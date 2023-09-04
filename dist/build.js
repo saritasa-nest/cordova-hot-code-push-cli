@@ -87,7 +87,7 @@ function prepareConfig(context) {
   return config;
 }
 
-function hashFile(filename, callback, chcpContext) {
+function hashFile(filename, chcpContext, callback) {
   var hash = crypto.createHash('md5'),
       stream = fs.createReadStream(filename);
 
