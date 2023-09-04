@@ -33,3 +33,12 @@ Build 2015.09.07-11.20.55 created in /Cordova/TestProject/www
 As a result, `chcp.json` and `chcp.manifest` files are generated in the `www` folder and project is ready for deployment.
 
 More information about those configs can be found on [Cordova Hot Code Push plugin](https://github.com/nordnet/cordova-hot-code-push) documentation page.
+
+
+### Contribution
+
+If you need to update the package, make sure you build it before you push it to github. Our projects refer to github repo, specifically dist folder. The workflow is following:
+
+- Do some work in `src` folder
+- Run `npm run transpile` to prepare dist folder
+- Push to github
